@@ -42,25 +42,13 @@ cd $( dirname "${BASH_SOURCE[0]}" )/..
 
 [[ ! -f ${BUILD_DIR}/CMakeCache.txt ]] && printf "${COLOR_RED}Please run ${SCRIPT_DIR}/eosio_build.sh first!${COLOR_NC}" && exit 1
 echo "${COLOR_CYAN}====================================================================================="
-echo "========================== ${COLOR_WHITE}Starting EOSIO Installation${COLOR_CYAN} ==============================${COLOR_NC}"
+echo "========================== ${COLOR_WHITE}Starting CONSENTIUM (Based on EOSIO) Installation${COLOR_CYAN} ==============================${COLOR_NC}"
 execute cd $BUILD_DIR
 execute make install
 execute cd ..
 
-printf "\n${COLOR_RED}      ___           ___           ___                       ___\n"
-printf "     /  /\\         /  /\\         /  /\\        ___          /  /\\ \n"
-printf "    /  /:/_       /  /::\\       /  /:/_      /  /\\        /  /::\\ \n"
-printf "   /  /:/ /\\     /  /:/\\:\\     /  /:/ /\\    /  /:/       /  /:/\\:\\ \n"
-printf "  /  /:/ /:/_   /  /:/  \\:\\   /  /:/ /::\\  /__/::\\      /  /:/  \\:\\ \n"
-printf " /__/:/ /:/ /\\ /__/:/ \\__\\:\\ /__/:/ /:/\\:\\ \\__\\/\\:\\__  /__/:/ \\__\\:\\ \n"
-printf " \\  \\:\\/:/ /:/ \\  \\:\\ /  /:/ \\  \\:\\/:/~/:/    \\  \\:\\/\\ \\  \\:\\ /  /:/ \n"
-printf "  \\  \\::/ /:/   \\  \\:\\  /:/   \\  \\::/ /:/      \\__\\::/  \\  \\:\\  /:/ \n"
-printf "   \\  \\:\\/:/     \\  \\:\\/:/     \\__\\/ /:/       /__/:/    \\  \\:\\/:/ \n"
-printf "    \\  \\::/       \\  \\::/        /__/:/        \\__\\/      \\  \\::/ \n"
-printf "     \\__\\/         \\__\\/         \\__\\/                     \\__\\/ \n\n${COLOR_NC}"
-
 printf "==============================================================================================\\n"
-printf "${COLOR_GREEN}EOSIO has been installed into ${CACHED_INSTALL_PATH}/bin${COLOR_NC}"
+printf "${COLOR_GREEN}CONSENTIUM (Based on EOSIO) has been installed into ${CACHED_INSTALL_PATH}/bin${COLOR_NC}"
 printf "\\n${COLOR_YELLOW}Uninstall with: ${SCRIPT_DIR}/eosio_uninstall.sh${COLOR_NC}\\n"
 printf "==============================================================================================\\n\\n"
 resources
