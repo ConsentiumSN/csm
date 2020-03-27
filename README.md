@@ -36,11 +36,14 @@ CONSENTIUM (Based on EOSIO) currently supports the following operating systems:
 
 ---
 
-## Software Build
+To Build
+---------------------
 
-> chmod +x scripts/csm.sh
-> ./scripts/csm.sh
-> ./scripts/eosio_build.sh -s CSM
+```
+chmod +x scripts/csm.sh
+./scripts/csm.sh
+./scripts/eosio_build.sh -s CSM
+```
 
 ## License
 
